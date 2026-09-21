@@ -1,0 +1,31 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".contral/**": false,
+        "**/.contral": false
+    },
+    "files.watcherExclude": {
+        ".git/objects/**": true,
+        ".git/subtree-cache/**": true,
+        ".hg/store/**": true,
+        "*/.git/objects/**": true,
+        "*/.git/subtree-cache/**": true,
+        "*/.hg/store/**": true,
+        ".contral/**": true
+    },
+    "explorer.excludeGitIgnore": false,
+
+    "python.analysis.extraPaths": [
+        "./ml-service"
+    ],
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}/ml-service"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}/ml-service"
+    }
+}

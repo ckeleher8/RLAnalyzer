@@ -1,0 +1,29 @@
+{
+    "autonomy": {
+        "policy": "turbo",
+        "workspaceOnly": true,
+        "terminal": {
+            "autoApprove": [
+                "npm test",
+                "npm run build",
+                "git status",
+                "git diff",
+                "pytest",
+                "dotnet test"
+            ],
+            "denylist": [
+                "rm -rf /",
+                "git push --force",
+                "shutdown",
+                "chmod -R 777"
+            ]
+        },
+        "browser": {
+            "enabled": true,
+            "allowedOrigins": [
+                "http://localhost:*",
+                "http://127.0.0.1:*"
+            ]
+        }
+    }
+}
